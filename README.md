@@ -12,9 +12,17 @@ The TESTING.md file walks through the full test on a real GPU host. Every comman
 
 The PROPOSAL.md file (added later) will describe the change that OpenShell needs.
 
+## These are real measurements
+
+Nothing in this repository is synthetic, mocked, or paraphrased. Every command was run on a live GPU machine on 2026 April 29. Every output block was copied directly from the terminal of that session. The hostname, the GPU bus ID, the HAMi annotations, the sandbox names, the pod logs, all of it is what the cluster actually returned at the moment of the test.
+
+The software involved is real software from real organisations. OpenShell is the open source platform from NVIDIA at github.com/NVIDIA/OpenShell. HAMi is the CNCF Sandbox project from the Project HAMi community at github.com/Project-HAMi/HAMi. K3s is from SUSE. The container runtime is the public NVIDIA Container Toolkit. The cloud machine was rented from Nebius.
+
+The aim of this writeup is to give a maintainer or another engineer enough information to reproduce the same result on their own hardware. The tooling exists, the limitation is real, and the fix is small.
+
 ## Test machine
 
-One Nebius node with one NVIDIA L40S (46 GB). Ubuntu host running NVIDIA driver 580.126.09 and nvidia container runtime 1.18.2. K3s v1.34 on the host (used for an isolated baseline), K3s v1.35 inside the OpenShell gateway container. HAMi chart v2.8.1.
+One Nebius node called `nebius-tarantula`. One NVIDIA L40S with 46068 MB of memory. Ubuntu host running kernel 6.11.0, NVIDIA driver 580.126.09, and nvidia container runtime 1.18.2. K3s v1.34 on the host (used for an isolated baseline earlier in the day), K3s v1.35 inside the OpenShell gateway container. HAMi chart v2.8.1.
 
 ## Headline result
 

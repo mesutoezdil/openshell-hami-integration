@@ -1,6 +1,10 @@
 # End to End Test of HAMi on an OpenShell Gateway
 
-This file records the full test on a real GPU machine. Read top to bottom. Every command and every output is real, copied straight from the terminal session of 2026 April 29.
+This file records the full test on a real GPU machine. Read top to bottom.
+
+Every command in this file was actually executed. Every output block was copied directly from the terminal of that session on 2026 April 29. No outputs were generated, summarised, or paraphrased. The hostname `nebius-tarantula`, the GPU UUID `GPU-7b976500-49f8-f067-8dab-99e9ddc64b30`, the bus ID `00000000:8D:00.0`, the HAMi annotations, and the pod logs are all the real values returned by the cluster during the test.
+
+The software is real software from real organisations. OpenShell is from NVIDIA, version 0.0.36 from the public install script. HAMi is the v2.8.1 chart from the Project HAMi CNCF Sandbox community. K3s is from SUSE. The cloud machine was rented from Nebius for this test.
 
 ## 1. The host
 
