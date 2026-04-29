@@ -12,6 +12,14 @@ The TESTING.md file walks through the full test on a real GPU host. Every comman
 
 The PROPOSAL.md file (added later) will describe the change that OpenShell needs.
 
+## Upstream issue
+
+The findings in this repo were filed as a feature request on the OpenShell side:
+
+https://github.com/NVIDIA/OpenShell/issues/1065
+
+That issue contains the proposed design and links back to this repository for the full reproduction.
+
 ## These are real measurements
 
 Nothing in this repository is synthetic, mocked, or paraphrased. Every command was run on a live GPU machine on 2026 April 29. Every output block was copied directly from the terminal of that session. The hostname, the GPU bus ID, the HAMi annotations, the sandbox names, the pod logs, all of it is what the cluster actually returned at the moment of the test.
